@@ -1,0 +1,15 @@
+<p>
+  detail works!
+</p>
+
+<div class="container">
+  <div class="jumbotron" >
+    <div class="card" *ngIf="post$ | async as post">
+      <div class="card-body">
+        <h5 class="card-title">{{ post.title }}</h5>
+        <p class="card-text">{{ post.body }}</p>
+        <a routerLink="/posts" class="btn btn-primary">Go Back</a>
+      </div>
+    </div>
+  </div>
+</div>
